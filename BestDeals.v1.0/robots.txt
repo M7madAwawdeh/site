@@ -1,0 +1,82 @@
+User-agent: Googlebot
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+Allow: /pagead/html/r20230517/r20190131/zrt_lookup.html
+Allow: /pagead/managed/js/adsense/m202305160101/show_ads_impl_with_ama_fy2021.js
+
+
+User-agent: Bingbot
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+User-agent: Baiduspider
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+User-agent: YandexBot
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+User-agent: DuckDuckBot
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+User-agent: Slurp
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+# Global User-agent directive
+User-Agent: *
+Allow: /ads/preferences/
+Allow: /dtt/k
+Allow: /gpt/
+Allow: /pagead/show_ads.js
+Allow: /pagead/js/adsbygoogle.js
+Allow: /pagead/*/show_ads_impl.js
+Allow: /static/glade.js
+Allow: /static/glade/
+Allow: /tag/js/
+
+
