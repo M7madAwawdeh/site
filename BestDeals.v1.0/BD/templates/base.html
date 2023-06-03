@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="{% for keyword in keywords %}{{ keyword }}{% if not forloop.last %}, {% endif %}{% endfor %}">
+  <link rel="icon" href="/static/logo.png" type="image/png">
+  <link rel="shortcut icon" href="/static/logo.png" type="image/png">
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %} - A Short Offers</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f0f5ff;
+      font-family: Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      color: #000000;
+    }
+
+    .product-wrapper {
+      width: 140px; /* Adjust the width of each product wrapper */
+      max-width: 150px; /* Set a maximum width to maintain consistency */
+      margin: 0 auto; /* Center the product wrappers horizontally */
+      background-color: #f0f8ff;
+      padding: 10px;
+      border: 1px solid lightblue;
+      border-radius: 5px;
+      text-align: center;
+      height: 255px;
+    }
+
+    @media (min-width: 576px) {
+      .product-wrapper {
+        width: 50%; /* Display two elements per row on devices with min-width 576px (phones) */
+      }
+    }
+
+    @media (min-width: 768px) {
+      .product-wrapper {
+        width: 33.33%; /* Display three elements per row on devices with min-width 768px (tablets and larger screens) */
+      }
+    }
+
+    .container {
+      max-width: 960px; /* Adjust the container width for larger screens */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/adblock-message@2.0.0/dist/adblock-message.min.js"></script>
+
+</head>
+<body>
+  <main class="container">
+    <div id="adblock-notification">
+      <!-- This is where the ad-blocker notification will be displayed -->
+    </div>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    var options = {
+      message: "Please disable your ad-blocker to support our website.",
+      target: "adblock-notification",
+      buttonText: "OK",
+      buttonClass: "btn btn-primary",
+    };
+
+    window.adBlockMessage(options);
+  </script>
+</body>
+</html>
